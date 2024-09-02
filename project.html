@@ -1,0 +1,642 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    /*  1st box   */
+        .video {
+            width: 100%;
+            height: 530px;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 530px;
+            object-fit: cover;
+        }
+
+        .nav {
+            position: absolute;
+            top: 10;
+            left: 0px;
+            display: flex;
+        }
+
+        .nav img {
+            float: left;
+            margin-left: 80px;
+            margin-right: 40px;
+        }
+
+        .nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            margin-top: 0;
+            font-size: 20px;
+            align-content: center;
+        }
+
+        .paragraph {
+            font-size: 24px;
+            position: absolute;
+            top: 190px;
+            left: 320px;
+            margin-bottom: 5px;
+            color: white;
+        }
+       /* 2nd box */
+        .box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 25px;
+        }
+
+        .box h1 {
+            width: 35%;
+            margin-left: 20px;
+            font-size: 35px;
+            color: rgb(0, 80, 117);
+            margin-bottom: 30px;
+        }
+
+        .row {
+            width: 100%;
+            padding-left: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+            margin-left: 2px;
+            margin-bottom: 20px;
+        }
+
+        .col {
+            width: 41%;
+            box-shadow: 4px 4px 10px 4px rgb(212, 211, 211);
+            border-radius: 10px;
+            height: 140px;
+            align-content: center;
+            margin-top: 10px;
+            padding: 20px;
+            padding-top: 5px;
+        }
+
+        .col img {
+            width: 75px;
+            height: 75px;
+            float: left;
+            padding-top: 15px;
+        }
+
+        .text {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .icon img {
+            width: 30px;
+            height: 35px;
+            align-content: center;
+            float: right;
+            margin-top: 35px;
+            margin-right: 40px;
+        }
+       /* 3rx box */
+        .box2 {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            background-image: linear-gradient(to right, rgb(16, 10, 102), rgb(65, 133, 236));
+
+        }
+
+        .row2 {
+            display: flex;
+            margin-left: 150px;
+            margin-top: 60px;
+        }
+
+        .smallbox {
+            width: 33%;
+            height: 230px;
+            margin-left: -80px;
+            border-radius: 20px;
+            background-color: white;
+            font-size: 20px;
+            gap: 5x;
+        }
+
+        .text2 {
+            position: absolute;
+            right: 400px;
+            color: white;
+            margin-top: 35px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .text3 {
+            position: absolute;
+            right: 150px;
+            margin-top: 35px;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+
+        .smalltext {
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+            color: blue;
+            font-size: 50px;
+        }
+
+        .next {
+            position: absolute;
+            left: 100px;
+            bottom: 110px;
+            color: blue;
+            font-size: 50px;
+        }
+
+        .fis {
+            position: absolute;
+            left: 150px;
+            top: 460px;
+            color: blue;
+            font-size: 50px;
+        }
+
+        .vc {
+            position: absolute;
+            left: 170px;
+            top: 400px;
+            color: blue;
+            font-size: 40px;
+        }
+
+        .pp {
+            position: absolute;
+            left: 380px;
+            top: 400px;
+            color: blue;
+            font-size: 40px;
+        }
+
+        .ss {
+            position: absolute;
+            left: 380px;
+            bottom: 20px;
+            color: blue;
+            font-size: 60px;
+        }
+      /* 4thbox */
+         .box4 {
+            width: 100%;
+            height: 430px;
+         }
+
+        .namebox {
+            float: left;
+            display: flex;
+            display: block inline;
+            flex-wrap: wrap;
+            margin-top: -270px;
+            margin-left: 420px;
+            width: 60%;
+            height: 70px;
+
+        }
+
+        input[type=text] {
+
+            width: 45%;
+            height: 50px;
+            font-size: 20px;
+            padding-left: 8px;
+            border: 1.3px solid black;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin: 30px 0 0 50px;
+
+        }
+       /* 5th box */
+        .box5 {
+            display: flex;
+            width: 100%;
+            height: 600px;
+            background-color: black;
+            color: white;
+            padding-top: 60px;
+            padding-left: 70px;
+            font-size: 20px;
+        }
+
+        .ccen {
+            padding-left: 0px;
+            margin-top: -60px;
+            font-size: 18px;
+        }
+
+        .b2 {
+            float: right;
+            padding-left: 70px;
+            margin-top: -60px;
+            font-size: 18px;
+        }
+
+        .cc {
+            padding-left: 70px;
+            margin-top: -60px;
+            font-size: 18px;
+        }
+
+        .sss {
+            padding-left: 70px;
+            margin-top: -60px;
+            font-size: 18px;
+        }
+
+        .cu {
+            padding-left: 80px;
+            margin-top: -60px;
+            font-size: 18px;
+        }
+
+        input [type=text] {
+            width: 20%;
+            height: 70px;
+            background-color: white;
+            padding-left: 70px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- video -->
+
+    <div class="video">
+        
+        <video autoplay muted loop>
+            <source src="main-page-video-black.mp4">
+        </video>
+
+        <!-- nav -->
+        <div class="nav">
+            <img src="Cemtizen.png">
+            <a href="0">Talent Solution</a>
+            <a href="0">Software Engineering</a>
+            <a href="0">Remote Hiring</a>
+            <a href="0">Products</a>
+            <a href="0">Company</a>
+            <a href="0">Career</a>
+            <a href="0">Contant Us</a>
+        </div>
+        <div class="paragraph">
+            <h1>
+                We're a global staffing & software<br>
+                engineering company making <br>
+                success stories for over 19 years
+            </h1>
+        </div>
+    </div>
+    <!-- 2nd box -->
+
+    <div class="box">
+
+        <h1 style="margin-left: 250px;"> Solution</h1>
+        <h1>Software Engineering</h1>
+
+        <!-- row1 -->
+        <div class="row">
+            <div class="col">
+                <img src="staffing.png">
+                <div class="text">
+                    <h3>Staffing<br></h3>
+                    <p style="margin-top: 0;">Enhancing productivity with skilled<br>
+                        stafing and argumentation</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+            <div class="col">
+                <img src="Software-Development-Services.png">
+                <div class="text">
+                    <h3>Software Development Services<br></h3>
+                    <p style="margin-top: 0;">Create scalable and modern digital<br>
+                        solution</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+        <!-- row2 -->
+        <div class="row">
+            <div class="col">
+                <img src="Global-remote-hiring.png">
+                <div class="text">
+                    <h3>Global Remote Hiring<br></h3>
+                    <p style="margin-top: 0;">Global talent acquistion through<br>
+                        remote hiring borders</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+            <div class="col">
+                <img src="Product-Development-Services.png">
+                <div class="text">
+                    <h3>Product Development Services<br></h3>
+                    <p style="margin-top: 0;">Transform ideas into prowerful<br>
+                        digital products</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+        <!-- row3 -->
+        <div class="row">
+            <div class="col">
+                <img src="Dedicated-Developers.png">
+                <div class="text">
+                    <h3>Dedicated Developers<br></h3>
+                    <p style="margin-top: 0;">Expert developers for all your web,<br>
+                        mobile,Data,AI, and cloud needs</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+            <div class="col">
+                <img src="Cloud-Native-Development.png">
+                <div class="text">
+                    <h3>Cloud Native Developement<br></h3>
+                    <p style="margin-top: 0;">Transform ideas into powerful<br>
+                        digital products</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+        <!-- row4 -->
+        <div class="row">
+            <div class="col">
+                <img src="IT-sourcing.png">
+                <div class="text">
+                    <h3>IT Outsourcing<br></h3>
+                    <p style="margin-top: 0;">Efficient development via<br>
+                        outsourced software components</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="Digital-Experience-Design.png">
+                <div class="text">
+                    <h3>Digital Experience Design<br></h3>
+                    <p style="margin-top: 0;">Design engaging and user-friendly<br>
+                        digital experiences</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+        <!-- row 5 -->
+        <div class="row">
+            <div class="col">
+                <img src="Team-extension.png">
+                <div class="text">
+                    <h3>Team extension<br></h3>
+                    <p style="margin-top: 0;">Extend team capabilities with<br>
+                        managed services</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="DevOps-Engineering.png">
+                <div class="text">
+                    <h3>DevOps Engineering<br></h3>
+                    <p style="margin-top: 0;">Optimize software development<br>
+                        and development process</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+        <!-- row 6 -->
+        <div class="row">
+            <div class="col">
+                <img src="Scalable-agile-teams.png">
+                <div class="text">
+                    <h3>Scalable agile teams<br></h3>
+                    <p style="margin-top: 0;">Flexible teams for dynamic business<br>
+                        demands,on-demand</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="Quality-Engineering.png">
+                <div class="text">
+                    <h3>Quality Engineering<br></h3>
+                    <p style="margin-top: 0;">Improve software quality through<br>
+                        testing and engineering</p>
+                </div>
+                <div class="icon">
+                    <img src="next icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3rd box -->
+
+    <div class="box2">
+
+        <center>
+            <h2 style="padding-top: 20px; color: white; font-size: 45px; padding-left: 20px;">Our Products</h2>
+            <div class="row2">
+                <div class="smallbox">
+                    <img src="zen basket.jpeg" style="width: 50%; height: 85px;">
+                    <p>
+                        An online pisform that allows you<br>
+                        to sell products to a large<br>
+                        audience with customable<br>
+                        future
+                    </p>
+                </div>
+                <div class="smallbox" style="margin-left: 30px;">
+
+                    <img src="zenyo_payroll_logo.jpeg" style="width:50%; height:90px;">
+                    <p>
+                        An automated payroll application <br> that streamlines monthly salary <br> disbursements
+                        for your<br> employees
+                    </p>
+
+
+                </div>
+                <div class="smallbox" style="margin-left:30px ;">
+                    <img src="workforce.jpeg" style="width: 50%; height:90px ;">
+                    <p>
+                        HR software that simplifies all HR<br> processes and maximizes<br> productivity by
+                        automating <br>routine tasks.
+                    </p>
+                </div>
+        </center>
+        <div class="text2">
+            <center>
+                <h1 style="padding-left: 40px;">19+</h1>
+            </center>
+            <p style="padding-left: 40px;">Year of experience</p>
+            <hr style="width: 100%;">
+            </hr>
+            <center>
+                <h1 style="padding-left: 60px;"> 1000 +</h1>
+            </center>
+            <p style="padding-left: 50px;">devolop space accure univercity</p>
+        </div>
+
+
+        <div class="text3">
+            <center>
+                <h1 style="padding-left: 60px;">800+</h1>
+            </center>
+            <p style="padding-left: 70px;">Year of experience</p>
+            <hr style="width:120% ;">
+            </hr>
+            <center>
+                <h1 style="padding-left: 70px;">100%</h1>
+            </center>
+            <p style="padding-left: 60px;">Fulled by passion</p>
+        </div>
+        <div class="smalltext">pandquit</div>
+        <div class="next">American Express</div>
+        <div class="fis">Fiserv.</div>
+        <div class="vc">nVoicepay</div>
+        <div class="pp">PENN<br> COLOUR</div>
+        <div class="ss">ificSource</div>
+    </div>
+    <!-- 4th box -->
+
+    <div class="box4">
+
+        <h1 style="margin-top: 80px; margin-left: 50px; color: rgb(0,80,117);">Contuct Us</h1>
+        <h2>United States:<span style="font-size: 20px;
+              color: gray;margin-top: 5px; margin-left: 15px;">+1 (971) 420-1700</span></h2>
+        <h2>Canada:<span style="font-size: 20px;
+              color: gray;margin-top: 5px; margin-left: 15px;">+1 (971) 420-1700</span></h2>
+        <h2>India:<span style="font-size: 20px;
+              color: gray;margin-top: 5px; margin-left: 15px;">+ 91 63807-80156</span></h2>
+        <h2>Email:<span style="font-size: 20px;
+               color: gray; margin-top: 5px; margin-left: 15px;">
+                contact@centizen.com </span></h2>
+        <form>
+            <div class="namebox">
+                <input type="text" placeholder="Name*" style="color: black;font-weight: 300px;">
+                <input type="text" placeholder="Organization*"><br>
+                <input type="text" placeholder=" Email Address*">
+                <input type="text" placeholder="PhoneNumber*"><br>
+                <textarea rows="6" cols="95%" placeholder="Additinal Details*" style="margin-left: 28px;
+                               font-size: 18px; padding: 10px;
+                              border: 1.3px solid black; border-radius: 5px;"></textarea><br>
+                <button type="button" onclick="alert('your request accep')" style="width: 30%; height: 50px; 
+                           background-color: orangered;
+                            border-radius: 10px; color: white; font-size: 18px;margin-left: 30px;
+                           margin-top: 20px;   border: none;">Send Request</button>
+            </div>
+        </form>
+    </div>
+    <!-- 5th box -->
+
+    <div class="box5">
+
+        <div class="ccen">
+            <h3 style="font-size: 25px;">centizen</h3>
+            <p style="margin-bottom: 0;">A Leading IT staffing,<br><br>
+                Custom software and SaaS<br><br>
+                Product Development <br><br>
+                company founded in 2003.<br><br>
+                We offer a wide range of<br><br>
+                scalable, innovative IT <br><br>
+                Staffing and Software <br><br>
+                Deveopment Solutions.</p><br>
+            <img src="Twitter-logo-2.png" style="width: 15%;height: 60px;margin-left: -10px;">
+            <img src="in.png" style="width: 15%;height: 60px; padding-left: 10px;">
+            <img src="fb.png" style="width: 15%;height: 60px; padding-left: 10px;">
+            <img src="yt.png" style="width: 15%; height: 60px; padding-left: 10px;">
+            <img src="ig.png" style="width: 15%;height: 60px; padding-left: 10px;">
+
+        </div>
+        <div class="b2">
+            <h3 style="font-size: 25px;">Our Services</h3>
+            <p>IT Staffing<br><br>
+                General Staffing <br><br>
+                Remote Hiring </p>
+            <h3 style="font-size: 25px;">Products</h3>
+            <p>Zen Basket<br><br>
+                Zenyo Payroll<br><br>
+                Zenyo Workforce</p>
+        </div>
+        <div class="cc">
+            <h3 style="font-size:25px;">Company</h3>
+            <p>About Us<br><br>
+                Why Us<br><br>
+                Case Studies<br><br>
+                Blocks<br><br>
+                Carrers<br><br>
+                Client Referral<br><br>
+                Afilitate Us<br><br>
+                Contact Us</p>
+        </div>
+        <div class="sss">
+            <h3 style="font-size:25px;">Software Engineering</h3>
+            <p>Sofetware Development<br><br>
+                Product Development<br><br>
+                DevOps Engineering<br><br>
+                Digital Experience Design<br><br>
+                Quality Engineering & Testing<br><br>
+                Cloud Development Services<br><br>
+                Tech Stack</p>
+        </div>
+        <div class="cu">
+            <h3 style="font-size:25px;">Contact Us</h3>
+            <p>USA:+1(971)420-1700<br><br>
+                Canada:+(971)420-1700<br><br>
+                India:+91 63807-80156<br><br>
+                Email<br>
+                contact@centizen.com</p>
+            <input type="text" value="REVIWED ON">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
